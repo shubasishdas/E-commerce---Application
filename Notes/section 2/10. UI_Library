@@ -1,0 +1,1 @@
+- React is concerned only with UI. So the developer has options to use the same react code into different platforms (web, mobile, desktop, 360 etc). In those cases, we need to import the package related to them. Like React DOM is for web, React Native is for mobile.

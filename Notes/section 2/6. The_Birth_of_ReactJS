@@ -1,0 +1,4 @@
+- Back in the ’90s, we had to interact with web pages with Html, CSS, and JavaScript in every request. Then SPA comes with the solution of not interacting with the server on each request. We just need to add functionality in js and Html - CSS is applied.
+- Different browsers come up with different functionality and they render pages as their setup. Back in those day, it was difficult to render pages with the same style in those browsers. JQuery came up as life-saving then. It handles the rendering with DOM manipulation.
+- When the applications were getting large-scaled, then developers were facing issues with managing the files. AngularJS came up with the solution to that problem along with the MVC pattern.
+- But AngularJS has problems with managing state management. Data is flown everywhere. Then React came up. Angular also modified its total code base in 2014 to fix up those.

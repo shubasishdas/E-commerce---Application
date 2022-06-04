@@ -1,0 +1,3 @@
+- The success of React mainly depends on its three characteristics.
+- One is “Don’t touch the DOM”. We just need to tell React how are web pages should be like. React will handle the DOM in most optimized way.
+- Before of React, we need to grab the DOM directly and modify the DOM as per the functionality. If user is logged in, change the icon. Change the bot section also. Again change the body section. This is the imperative approach.
