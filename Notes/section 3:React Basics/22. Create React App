@@ -1,0 +1,6 @@
+- When our application gets hosted, bundle size should be so optimized to load on the browser. `react-scripts build` takes all files and bundles them in a folder(build) that contains old javascript code that the browser understands. Babel & webpack do the optimization by this command.
+- Babel converts all modern code to old code that the browser understands. Webpack modules the full application into different small chunks. So when user navigate to part of the app, then chunk code is executed only; not the full code.
+- `react-scripts test`   is for testing the App component if it works the way we expected.
+- `react-scripts eject` is for when we need custom babel & webpack configuration.
+- menifest.json is for when user uses the application offline, they will just click the icon on the device and the application gets to run.
+- robots.txt is for SEO purposes.
