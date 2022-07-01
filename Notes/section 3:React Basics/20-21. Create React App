@@ -1,0 +1,23 @@
+- NPM and NPX - both are node package managers. Developers develop node/js-based utility to leverage other developers. NPX installs and executes the package as well as automatically deletes the tool to save up memory whereas npm installs the package only.  For NPM, we need another command to run the package.
+
+```jsx
+npm i -g cowsay
+cowsay hello
+
+npx cowsay hello
+```
+
+- `react-scripts start` takes all files that’s required to run the project & runs it on a local development server
+- The entry point for every react project is index.js
+- React is the engine by which one can build the application. ReactDOM is the tool we can build web applications. ReactNative is for mobile applications.
+- React.Strict mode shows warnings if something in React gets deprecated.
+- Render happens inside of root element
+    ```jsx
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+    );
+    ```
+

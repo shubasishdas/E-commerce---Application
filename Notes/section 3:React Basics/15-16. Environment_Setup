@@ -1,0 +1,2 @@
+- Install code editor(vscode), node. If you prefer yarn over npm, then install that too.
+    - installing nvm comes with node, npm, changing node version easily
