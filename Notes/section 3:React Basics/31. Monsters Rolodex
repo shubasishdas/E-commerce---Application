@@ -1,0 +1,15 @@
+- When updating state on event handling(onClick) and trying to get updated state in that same event handling, it’s tricky to get that. SetState acts here as asynchronmous due to batch updating.
+    <button onClick={()=> { 
+                        this.setState(
+                            () => {
+                                return {
+                                    name:"minju"
+                                };							
+                            },
+                            () => {
+                                    console.log(this.state);
+                            }
+                        );
+    }}
+    > change name
+    </button>

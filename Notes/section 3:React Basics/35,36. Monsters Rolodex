@@ -1,0 +1,2 @@
+- Before SPA, users request through domain and see output as html, css, js file loads every time on every request from server. After SPA, js files comes as bundle with React and when user request, js file loads for the first time and generate html, css for the subsequent request.
+- Promise is for handling asynchronous events efficiently. Before promise, handling asynchronous events get into callback hell.

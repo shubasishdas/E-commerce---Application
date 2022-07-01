@@ -1,0 +1,17 @@
+- When the component gets re-rendered, the render method is executed in that time.
+- When we use `type=”search”` in input field, cross sign(x) appears.
+- For performance, we should use specific function rather than anonymous function in event handling. Cause anonymous function is not stored by javascript anywhere. It’s just read by js and created in that time and gets thrown away. So when re-render happens on event handling(on click), the same structure of the new anonymous function gets initiated every time.
+- But if we define a method/function in replace of anonymous function, JS stores the method when app is mounted for the first time. And in every re-render it passes the event on event handling on that known stored method. This time that method is not created newly every time.
+- We should use destructure in our coding practice for better developer experience.
+
+<input
+   type="search"
+   onChange={(event)=>this.setState({name:"minju"})}
+ />
+
+following one is preferable
+
+<input
+   type="search"
+   onChange={onSearchChange}
+ />
