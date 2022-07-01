@@ -1,2 +1,2 @@
-- The order of lifecycle methods constructor → render → componentDidMount
+- The rendering order of lifecycle methods constructor → render → componentDidMount -> render (if state updates)
 - For React strict mode, component renders twice for the first time mounting
