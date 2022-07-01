@@ -1,0 +1,2 @@
+- constructor() method automatically runs when class component is called. We can initiate state and variable in constructor method. super() method calls the extended component.
+- ReactDOM changes when then the reference of state object changes; not the value of object changes. So when we change the state value on an event handling, like `this.state.name=”minju”` it won’t changes the dom. Rather we had to user `this.setState({name:”minju”})`
