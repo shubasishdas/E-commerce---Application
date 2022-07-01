@@ -1,0 +1,1 @@
+When import a css file on a component and that css file contains a class that applies on other component, those styles will be applied even if the css is not imported later component. 
