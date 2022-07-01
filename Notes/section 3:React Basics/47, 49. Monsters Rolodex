@@ -1,0 +1,4 @@
+- When props/states change, the component gets re-rendered.
+- If any of the props/state change in the parent component, child components will also re-rendered except using **React.memo()**.
+- When import a css file on a component and that css file contains a class that applies on other component, those styles will be applied even if the css is not imported later component. 
+- To stop one imported css apply to other file that's not even imported the css, we can use css-in-js features.

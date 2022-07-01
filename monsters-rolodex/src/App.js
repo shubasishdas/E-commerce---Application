@@ -10,11 +10,9 @@ class App extends Component {
       monsters: [],
       searchField: "",
     };
-    console.log("constructor");
   }
 
   componentDidMount() {
-    console.log("componentDidMount");
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((users) => this.setState({ monsters: users }));
@@ -25,7 +23,6 @@ class App extends Component {
   };
 
   render() {
-    console.log("render");
     const { onSearchChange } = this;
     const { monsters, searchField } = this.state;
     const filteredMonsters = monsters.filter((monster) =>
@@ -34,6 +31,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1 className="rolodex-header">Monster Rolodex</h1>
         <SearchBox
           onChangeHandler={onSearchChange}
           className="search-box"
