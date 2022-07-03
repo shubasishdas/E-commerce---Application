@@ -1,0 +1,28 @@
+- Functional components are different from class components that are not having constructor, render , lifecycle methods rather they are going to have javascript shaped functional structure whose are returning jsx.
+- Functional components are going to follow impure functions as they are having side effects by using different hooks.
+- Pure functions are those whose return solely depend on the parameter passing on function.
+- Impure functions are those whose are relying on parameter out of that functional scope.
+
+
+# pure function
+			funcA(a,b){
+				return a+b;
+			}
+
+# impure function
+	    c = 5;
+			funcB(a,b){
+				return a+b+c;
+			}		
+
+			# with side effects
+			-> side effect is when the function creates some kind of effect
+				 outside of scope even the returning of function may not change.
+ 
+			c = 5;
+			funcB(a,b){
+				c = a*b;
+				return a+b;
+			}
+			
+		
