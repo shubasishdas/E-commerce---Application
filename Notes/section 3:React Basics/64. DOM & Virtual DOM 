@@ -1,0 +1,4 @@
+- Pulling off & changing elements/nodes in Real Dom is quite expensive. This is easier on javascript. That’s why React creates a javascript tree based DOM named virtual DOM. When changing something in application, another virtual DOM is created as a copy and the previous one acts as a snapshot of the real DOM. Changing something applies on the copy version of virtual DOM and removes as per changes. Then copy version compares all changes with the snapshot version of virtual DOM and snapshot version get highlighted what to be modified. After that snapshot version applies those on real DOM. This process is going by diffing & batching algorithm, And finally, user sees the updated elements.
+- Functional component can receive props and forward-ref as parameter.
+
+https://www.notion.so/Section-3-React-Basics-29e9a4608a524742a0c954c5e8946561#a4bf9938caab4c74a7120cabd9807964

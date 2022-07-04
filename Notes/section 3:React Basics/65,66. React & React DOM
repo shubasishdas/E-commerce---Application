@@ -1,0 +1,15 @@
+- React is the engine that leverages to build applications. React DOM facilitates the tool for building web applications.
+- ReactDOM.render is deprecated, now we have to use createRoot method.
+- JSX syntax works under the hood as React.createElement statement.
+- create-react-app library comes with all this React, ReactDOM, JSX - a pleasant developer experience.
+
+
+const App = () => {
+        return React.createElement("div", {}, [
+          React.createElement(
+            "h1",
+            { className: "title" },
+            "React is rendered"
+          ),
+        ]);
+      };
