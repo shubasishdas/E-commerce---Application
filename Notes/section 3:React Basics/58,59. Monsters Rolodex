@@ -1,0 +1,44 @@
+- When any props/state changes, all code from top to bottom re-renders in every render.
+- If any state changes but the initial useState have that changed value, then the component will not re-render.
+
+const App = ()=>{
+	const [value,setValue] = useState("a");
+	const onSearchChange =(event)=> {
+		const searchString = event.target.value.toLocalCase();
+		setValue(searchString);
+	}
+	return (
+	<div>
+		<input onChange={onSearchChange} />
+	</div>
+ 
+
+	)
+}
+
+=> when users type "a", component won't re-render as it's having "a" value
+	before in state.
+
+
+- So component re-renders when the value of state changes, not the function of the state is called 
+
+
+- We can fall into infinite re-rendering when state function of value (setState) calls every time of state changes. The state seems to be the same in value but if the reference changes, the state also changes.
+
+const App =()=>{ 
+	const [monsters, setMonsters] = useState([]);
+	console.log("first render");	
+	
+	fetch("https://jsonplaceholder.typicode.com/users")
+	    .then((res) => res.json())
+	    .then((users) => setMonsters(users));
+	
+	console.log("second render");
+return (
+		<div> Hey
+		</div>
+	)
+}
+
+- When re-render/infinite render, code is being executed from top to bottom
+fetch is a side effect in this functional component. A side effect is any execution that affects something outside the scope of the function being executed. For performing side effects, we can use useEffect hook. 

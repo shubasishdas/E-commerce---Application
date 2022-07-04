@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import CardList from "./components/card-list/card-list.component";
-import SearchBox from "./components/search-box/search-box.component";
+- Without React.memo, when parent re-renders, child component always re-render.
+- In mount, normal code is initiated first before the return is called, then the return method is initiated. Then every useEffect in the component gets initiated. In useEffect, if any state updates, it happens first & component gets re-rendered. Then fetch calls gets after it.
 
 const App = () => {
   const [searchField, setSearchField] = useState("");
@@ -37,5 +35,3 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
