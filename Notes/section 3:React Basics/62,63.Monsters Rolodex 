@@ -1,0 +1,9 @@
+- In React 18, we need to wrap the root element in createRoot method. Then rendering out the application in strict mode.
+- Strict mode shows warning in the dev console if there is any deprecated code.
+- For using strict mode, component renders twice [*******] . In the dev console, the grey one is for strict mode.
+
+    import {createRoot} from "react-dom/client;
+
+    const container = document.getElementById("root");
+    const root = createRoot(container);
+    root.render(<React.strictMode><App /></React.strictMode>);
