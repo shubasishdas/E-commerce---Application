@@ -1,0 +1,2 @@
+- We can see the rendering & re-rendering visually of our application by going **paint flashing** option. Remembering that, when any component gets mounted/unmounted, full application get flashing. It’s called the reflow of DOM.
+- We can test the re-rendering by  **profiler > highlight updated when render**
