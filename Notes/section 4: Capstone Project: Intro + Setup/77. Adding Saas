@@ -1,0 +1,32 @@
+- Saas is the easy way to write css. We can easily maintain nested css property. The file type is scss.
+
+
+
+# In CSS
+.categories-container {
+  background-color: red;
+}
+
+.category-container {
+  background-color: blue;
+}
+
+.category-body-container {
+  background-color: green;
+}
+
+# In SASS
+.categories-container {
+  background-color: red;
+
+		.category-container {
+		  background-color: blue;
+
+					.category-body-container {
+					  background-color: green;
+					}
+		}
+}
+
+
+
