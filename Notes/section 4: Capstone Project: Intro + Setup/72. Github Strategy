@@ -1,0 +1,3 @@
+- 
+    - We fork projects so that we can change & push to that project. By fork, a copy of another one’s project is generated in our github which belongs to himself/herself only.
+    - Fork vs clone - By cloning another one’s project we can’t do push commits if we haven’t access(collaborator) to that repository. By forking, we can merge code changes to the original repository by creating pull request.
