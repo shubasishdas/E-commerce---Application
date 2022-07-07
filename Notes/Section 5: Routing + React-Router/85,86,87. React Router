@@ -1,0 +1,13 @@
+- When importing any svg and using as a component, we need to import as below
+    import { ReactComponent as CrwnLogo } from "../../assets/crown.svg";
+
+    <CrwnLogo />
+
+- We can use **Link** tag from react-router-dom to direct into an url when click on something.
+    <Link className="logo-container" to="/">
+        <CrwnLogo className="logo" />
+    </Link>
+
+- When **div**  is not required specially for wrap up after returning from function, we can use there fragments **<> /<>**
+- To remove the underline from a link, use **text-decoration:none**
+- If we want width/height doesn’t change with padding, we can imply **box-sizing:border-box**

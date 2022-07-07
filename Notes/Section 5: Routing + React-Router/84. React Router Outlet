@@ -1,0 +1,25 @@
+- If we want nested component means rendering one compoent inside another based on route, we’ve to nested router and Outlet component to the parent component.
+
+# App.js
+
+		function App() {
+		  return (
+		    <Routes>
+		      <Route path="/home" element={<Home />}>
+		        <Route path="shop" element={<Shop />} />
+		      </Route>
+		    </Routes>
+		  );
+		}
+
+
+# Home.jsx
+
+		function Home() {
+		  return (
+		    <div>
+		      <Outlet />
+		      <CategoryList categories={categories} />
+		    </div>
+		  );
+		}
