@@ -1,1 +1,3 @@
-   - We can use fonts from google fonts. Just we need to select the font and copy the **link** tag and paste in **index.html** file. Then we can use that font any css file.
+- We can use fonts from google fonts. Just we need to select the font and copy the **link** tag and paste in **index.html** file. Then we can use that font any css file.
+ 
+- package-lock.json/yarn.lock locks all the versions of packages we used in our application. For this lock file, we can ensure all developers are using the same versions of packages.
