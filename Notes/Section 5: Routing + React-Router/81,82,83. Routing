@@ -1,0 +1,17 @@
+- Routing is navigating to different web pages in an application. For routing we can use react-router or reach-router. In our app, we will use react-router.
+- **BrowserRouter** is the component to store the info where the page is navigated to a url. We should wrap the whole app within this component.
+- **Routes** component leverages the application to use **Route** component.
+- **Route** component renders the element in a specific path.
+
+# index.js
+		<React.StrictMode>
+		    <BrowserRouter>
+		      <App />
+		    </BrowserRouter>
+		 </React.StrictMode>
+	
+# App.js
+			<Routes>
+	      <Route path="/" element={<Home />} />
+	    </Routes>
+
