@@ -8,7 +8,7 @@ const SignIn = () => {
 
   return (
     <div>
-      <p>This is sign-in page</p>
+      <p>This belongs to sign-in page</p>
       <button onClick={handleGoogleUser}>Sign in with Google</button>
     </div>
   );
